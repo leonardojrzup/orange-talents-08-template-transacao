@@ -29,7 +29,7 @@ public class TransacaoController {
         Cartao cartao = cartaoRepository.findById(id).orElseThrow(() -> new ResponseStatusException(
                 HttpStatus.NOT_FOUND, "Cartão não encontrado no banco de dados"));
 
-        List<Transacao> transacoes = transacaoRepository.findFirst10ByCartaoId(id);
+        List<Transacao> transacoes = transacaoRepository.findFirst100ByCartaoId(id);
         List<TransacaoDTO> dtos = transacoes.stream().map(TransacaoDTO::new).collect(Collectors.toList());
         return ResponseEntity.ok().body(dtos);
     }

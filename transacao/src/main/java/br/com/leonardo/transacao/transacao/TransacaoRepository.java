@@ -7,5 +7,5 @@ import java.util.List;
 
 @Repository
 public interface TransacaoRepository extends CrudRepository<Transacao, Long> {
-    List<Transacao> findFirst10ByCartaoId(String id);
+    List<Transacao> findFirst100ByCartaoId(String id);
 }
