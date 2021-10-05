@@ -17,10 +17,8 @@ public class Transacao {
     private String idMensagem;
     private BigDecimal valor;
     private LocalDateTime efetivadaEm;
-
     @ManyToOne(cascade = CascadeType.ALL)
     private Estabelecimento estabelecimento;
-
     @ManyToOne(cascade = CascadeType.ALL)
     private Cartao cartao;
 
@@ -35,7 +33,6 @@ public class Transacao {
         this.estabelecimento = estabelecimento;
         this.cartao = cartao;
     }
-
 
     public Long getId() {
         return id;

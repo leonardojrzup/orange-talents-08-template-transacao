@@ -5,7 +5,6 @@ import java.time.LocalDateTime;
 public class Erro {
     private final LocalDateTime horario;
     private final Integer codigoErro;
-
     private final String httpStatus;
     private final String mensagem;
 

@@ -4,7 +4,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-
 @Entity
 public class Cartao {
 
@@ -28,7 +27,4 @@ public class Cartao {
     public String getEmail() {
         return email;
     }
-
-    public String getNumero;
-
 }
