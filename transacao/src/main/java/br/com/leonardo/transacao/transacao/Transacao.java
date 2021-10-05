@@ -21,10 +21,8 @@ public class Transacao {
     @ManyToOne(cascade = CascadeType.ALL)
     private Estabelecimento estabelecimento;
 
-
     @ManyToOne(cascade = CascadeType.ALL)
     private Cartao cartao;
-
 
     @Deprecated
     public Transacao() {

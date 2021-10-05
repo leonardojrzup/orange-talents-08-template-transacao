@@ -10,20 +10,15 @@ public class Cartao {
 
     @Id
     String id;
-
-    String Email;
-
-    @Column(unique = true)
-    private String numero;
+    String email;
 
     @Deprecated
     public Cartao() {
     }
 
-
     public Cartao(String id, String email) {
         this.id = id;
-        Email = email;
+        this.email = email;
     }
 
     public String getId() {
@@ -31,6 +26,9 @@ public class Cartao {
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
+
+    public String getNumero;
+
 }
